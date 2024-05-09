@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 /* styles/base.css */
 
 /* Resetting default margin and padding */
@@ -8,17 +10,21 @@ body, h1, h2, h3, p, ul {
 
 /* Setting up typography */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial',sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
 header h1 {
-    margin-left: 30rem;
+    margin-left: 26rem;
+}
+
+main p {
+    font-family: 'Dancing script';
 }
 
 header nav {
-    margin-left: 33rem;
+    margin-left: 30rem;
 }
 
 h1, h2, h3 {
@@ -35,7 +41,7 @@ h2 {
 
 /* Header styles */
 header {
-    background-color: #f2f2f2;
+    background-color: darkolivegreen;
     padding: 1rem;
 }
 
@@ -45,12 +51,12 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin-right: 4rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 nav a:hover {
@@ -67,24 +73,51 @@ main {
     gap: 2rem;
 }
 
-.card {
-    background-color: #fff;
+.card1 {
+    background-color: seashell;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
 }
 
-.card h2 {
-    color: #007bff;
+.card1 p {
+    margin-left: 1rem;
 }
 
-.card p {
-    margin-bottom: 1rem;
+.card1 img {
+    float: right;
+    max-width: 200px; 
+    margin: 0 0 20px 20px;
+    margin-right: 1rem;
+}
+
+.card2 {
+    background-color: seashell;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 5rem;
+}
+
+.card1 h2 {
+    color: #333;
+    background-color: darkolivegreen;
+}
+
+.card2 h2 {
+    color: #333;
+    background-color: darkolivegreen;
+}
+
+.card2 ul {
+    margin-left: 2rem;
+}
+
+/*main img {
+    margin-left: 17rem;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: darkolivegreen;
     color: #fff;
     padding: 1rem;
     text-align: center;
