@@ -1,4 +1,4 @@
-// scripts/temples.js
+// scripts/getdates.js
 
 // Dynamically populate current year
 const currentYear = new Date().getFullYear();
