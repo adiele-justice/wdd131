@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Nigeria</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Adiele Justice Iheanyi. Web development, HTML, CSS, JavaScript.">
+    <meta name="author" content="Adiele Justice Iheanyi">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    
+    <main>
+      <div></div>
+        <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="./images/hero.webp">
+            <img src="images/hero.webp" alt="Description of the image">
+        </picture>
+
+        <section id="data">
+            <div class="data-box">
+                <h2>Data</h2>
+                    <p><strong>Area:</strong> 923,768 km²</p>
+                    <p><strong>Population:</strong> 228,408,983</p>
+                    <p><strong>Capital:</strong> Abuja FCT</p>
+                    <p><strong>Languages:</strong> English, Pidgin</p>
+                    <p><strong>Currency:</strong> Naira</p>
+                    <p><strong>Time Zone:</strong> GMT+1</p>
+                    <p><strong>Calling Code:</strong> +234</p>
+                    <p><strong>Internet TLD:</strong> .ng</p>
+            </div>
+        </section>
+        <section id="weather">
+            <div class="weather-box">
+                <h2>Weather <span class="weather-icon" >⛅</span></h2>
+                <p><strong>Temperature:</strong> 10°C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 5 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">9.8°C</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✨Adiele Justice Iheanyi✨ Nigeria ✨</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
