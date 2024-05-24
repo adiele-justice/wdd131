@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --primary-color: #d97618;
     --secondary-color: #d7c898;
     --accent-color: #d88d47;
@@ -33,7 +33,7 @@ main img {
 }
 
 /*Hero section*/
-#hero {
+/*#hero {
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ main img {
     width: 90%;
 }*/
 
-.data-box h2, .weather-box h2 {
+/*.data-box h2, .weather-box h2 {
     margin-top: 0;
     background-color: var(--accent-color);
     color: var(--secondary-color);
@@ -100,4 +100,83 @@ footer p {
         display: inline-block;
         vertical-align: top;
     }
+}
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 0;
+}
+
+header {
+    background-color: #1b672b;
+    color: #ed9912;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0.5rem;
+}
+
+main {
+    position: relative;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+section h2 {
+    color: #1b672b;
+}
+
+footer {
+    background-color: #1b672b;
+    color: #ed9912;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Positioning class elements within main image */
+#weather {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+#data {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+/* Styling for data and weather sections */
+.data-box,
+.weather-box {
+    margin: 0;
+}
+
+.data-box h2,
+.weather-box h2 {
+    margin-top: 0;
+}
+
+.weather-icon {
+    font-size: 24px;
 }

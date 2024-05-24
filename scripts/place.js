@@ -6,3 +6,4 @@ document.getElementById('currentyear').textContent = currentYear;
 
 // Dynamically populate last modified date
 document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+
