@@ -1,68 +1,63 @@
+/* Add these styles to filtered-temples.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #e6dedf;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #e96a7f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
 }
 
 .temple-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 10px 0;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #d2dae4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 .temple-card img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 15px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.temple-info {
+    margin-top: 15px;
+}
+
+.temple-info h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.temple-info p {
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #e96a7f;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 5px 0;
+    padding: 20px;
 }
