@@ -53,3 +53,4 @@ document.addEventListener("DOMContentLoaded", function() {
   // Dynamically populate last modified date
   document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
 });
+
