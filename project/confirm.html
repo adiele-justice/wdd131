@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Club</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Adiele Justice Iheanyi. Web development, HTML, CSS, JavaScript.">
+    <meta name="author" content="Adiele Justice Iheanyi">
+    <link rel="stylesheet" href="styles/skate.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sent Successfully</h1>
+    </header>
+
+    <div class="confirmation">
+        <h3>Your message have been sent. Thank you!</h3>
+        <h3>Total Reviews Submitted: <span id="reviewCount"></span></h3>
+        <h3>We'll get back to you soon.</h3>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>✨Urban Skate Alliance✨ Adiele Justice Iheanyi✨</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("reviewCount").textContent = localStorage.getItem("reviewCounter");
+    </script>
+</body>
+
+</html>

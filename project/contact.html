@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Club</title>
+    <meta name="description" content="it contains all about how to contact our company">
+    <meta name="author" content="Adiele Justice Iheanyi">
+    <link rel="stylesheet" href="styles/skate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.jpg" alt="Urban Skate Alliance"> 
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Events</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+   <section class="Company info">
+    <h3>Company Information:</h3>
+    <p>Address: 231 Eastwood, London</p>
+    <p>Phone: +331 (766) 435-2137</p>
+    <p>Email: urbanskatealliance@gmail.com</p>
+   </section>
+
+    <h2>It's more than just skating....</h2>
+    <section class="employee-profile" id="skaterImages"> 
+      <!-- Skaters images will be dynamically inserted here -->
+    </section>
+
+   <!-- Contact form -->
+   <section class="contact-form">
+    <h2>Contact Us</h2>
+
+    <form id="confirmationForm" method="get" action="confirm.html">
+      <fieldset>
+          <label for="name">What's your Name:</label>
+          <br>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <br>
+
+          <label for="email">Your Email:</label>
+          <br>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <br>
+
+          <label for="contact">Your Mobile No:</label>
+          <br>
+          <input type="contact" id="contact" name="contact" required>
+          <br>
+          <br>
+
+          <label for="purpose">What's the Purpose of your Message:</label>
+          <br>
+          <input type="radio" name="purpose">General Inquiry
+          <br>
+          <input type="radio" name="purpose">Championship Registration
+          <br>
+          <input type="radio" name="purpose">Feedback
+          <br>
+          <br>
+
+
+          <label for="message">Your Message:</label>
+          <textarea name="message" id="message" required></textarea>
+          
+
+          <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Please subscribe me to the monthly newsletter
+          </label>
+          
+      </fieldset>
+      <label for="submission button">
+      <button type="submit">Submit</button>
+      </label>
+    </form>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 ✨Urban Skate Alliance✨ Adiele Justice Iheanyi✨</p>
+  <p id="lastModified"></p>
+  </footer>
+
+<script src="script/contact.js"></script>
+</body>
+</html>
