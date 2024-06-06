@@ -1,11 +1,4 @@
- // scripts/getdates.js
-
-// Dynamically populate current year
-const currentYear = new Date().getFullYear();
-document.getElementById('currentyear').textContent = currentYear;
-
-// Dynamically populate last modified date
-document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+// scripts/filtered-temples.js
 
 const temples = [
     {
@@ -58,26 +51,41 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Salt Lake",
-        location: "Salt Lake City, Utah, United States",
-        dedicated: "1893, April, 6",
-        area: 253015,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake/400x250/salt-lake-temple-lds-971041-wallpaper.jpg"
+        templeName: "Baton Rouge, Louisiana",
+        location: "Baton Rouge,United States",
+        dedicated: "16, July, 2000",
+        area: 190000,
+        imageUrl: "https://churchofjesuschrist.org/imgs/a75beca22300a3263bd47fba03b5b0d1b5ca0753/full/320%2C/0/default"
     },
     {
-        templeName: "Tokyo Japan",
-        location: "Tokyo, Japan",
-        dedicated: "1980, October, 27",
-        area: 20035,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-exterior-1486397-wallpaper.jpg"
+        templeName: "Stockholm Sweden",
+        location: "Västerhaninge, Sweden",
+        dedicated: "1985, July, 2",
+        area: 21267,
+        imageUrl: "https://churchofjesuschrist.org/imgs/32063b0e351e47f76db1a50009f685761f48524d/full/320%2C/0/default"
     },
     {
-        templeName: "Manila Philippines",
-        location: "Manila, Philippines",
-        dedicated: "1984, September, 25",
-        area: 13500,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-exterior-1.jpg"
+        templeName: "Sapporo Japan",
+        location: "Atsubetsu-ku Sapporo, Japan",
+        dedicated: "2016, August, 21",
+        area: 53600,
+        imageUrl: "https://churchofjesuschrist.org/imgs/c917995588e9c8d3ce881ebd32405150f9109fa7/full/320%2C/0/default"
+    },
+    {
+        templeName: "São Paulo Brazil",
+        location: "São Paulo - SP, Brazil",
+        dedicated: "30, October, 1978",
+        area: 21267,
+        imageUrl: "https://churchofjesuschrist.org/imgs/940f3e201364433a3d5d3dc14b0cacee38d41d1d/full/320%2C/0/default"
+    },
+    {
+        templeName: "Rexburg Idaho",
+        location: "Rexburg Idaho, United States",
+        dedicated: "2016, August, 21",
+        area: 53600,
+        imageUrl: "https://churchofjesuschrist.org/imgs/af036291e98a7caa26e051bd65e2a37176cbbf89/full/320%2C/0/default"
     }
+    // Add other temple objects here...
 ];
 
 function createTempleCard(temple) {
@@ -95,7 +103,7 @@ function createTempleCard(temple) {
 }
 
 function displayTemples(filteredTemples) {
-    const templeContainer = document.getElementById('temple-container');
+    const templeContainer = document.getElementById('templeContainer');
     templeContainer.innerHTML = filteredTemples.map(createTempleCard).join('');
 }
 
@@ -121,7 +129,8 @@ function filterTemples(criteria) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    filterTemples('home');
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    document.getElementById('last-modified').textContent = document.lastModified;
+    filterTemples('all'); // Display all temples initially
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentyear').textContent = currentYear;
+    document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
 });

@@ -4,67 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    <meta name="description" content="It contains Temple photos or It is a Temple Album">
+    <meta name="description" content="It contains Temple photos or It is a Temple Photo Album">
     <meta name="author" content="Adiele Justice Iheanyi">
     <!-- CSS files -->
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
+            <a href="#" onclick="filterTemples('all')">Home</a>
+            <a href="#" onclick="filterTemples('old')">Old</a>
+            <a href="#" onclick="filterTemples('new')">New</a>
+            <a href="#" onclick="filterTemples('large')">Large</a>
+            <a href="#" onclick="filterTemples('small')">Small</a>
         </nav>
     </header>
 
-    <main>
-        <h1>Home</h1>
-        <div class="image-grid">
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-          <figure>
-            <img src="images/images.jpeg" alt="temples">
-            <figcaption>Columbus Ohio Temple</figcaption>
-          </figure>
-        </div>
-        <!-- Add more figure elements here for other temples -->
+    <main class="templeContainer">
+        <!-- Temple cards will be dynamically added here -->
     </main>
 
     <footer>
@@ -73,7 +31,6 @@
         <p id="lastModified"></p>
     </footer>
 
-    <!-- JavaScript -->
     <script src="scripts/temples.js" defer></script>
-</body>
-</html>
+    </body>
+    </html>

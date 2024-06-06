@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #e96a7f;
+    background-color: purple;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -19,6 +19,9 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
+nav a:hover{
+    color: gray;
+  }
 
 main {
     display: flex;
@@ -32,7 +35,7 @@ main {
     padding: 20px;
     background-color: #d2dae4;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(167, 164, 164, 0.841);
     width: 300px;
 }
 
@@ -56,8 +59,9 @@ main {
 }
 
 footer {
-    background-color: #e96a7f;
+    background-color: purple;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
+
